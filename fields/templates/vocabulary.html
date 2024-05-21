@@ -1,0 +1,15 @@
+{% extends 'navbar.html' %}
+
+{% block content %}
+
+<h1>definitions</h1>
+<ul>
+    {% for field in fields reversed %}
+
+        {% include 'definition_item.html' %}
+        
+    {% endfor %} 
+</ul>
+
+
+{% endblock %}
